@@ -40,7 +40,7 @@ app.layout = html.Div(children=[
     html.Div(children=[
         html.Div(children=[
             html.Div(children=[
-                html.Div(["หัวข้อ"],className="menu-name", id="menu-topic"),
+                html.Div(["รายละเอียด"],className="menu-name", id="menu-topic"),
                 dcc.Location(refresh=False, id="url"),
                 dcc.Link(children=[
                     html.Img(src=dash.get_asset_url("Menu - Thailand.png"), className="menu-pic", id="thai-map")

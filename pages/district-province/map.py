@@ -30,7 +30,7 @@ layout = html.Div(children=[
                                                  'border' : 'solid 3px #1aa2b6'}, id="tab2-map"),
         dcc.Link(children=[
             html.Img(src=dash.get_asset_url("Page2 - Table.png"), className="tab-pic"),
-            html.H2(children = 'ข้อมูลมีตาราง', className="tab-name"),
+            html.H2(children = 'ข้อมูลตาราง', className="tab-name"),
         ], href="/district-province/table", style={'background-color': '#dadee7',
                                                    'border' : 'solid 3px #aeb2b7'}, id="tab3-map")
     ], className="year-filter-and-tabs"),

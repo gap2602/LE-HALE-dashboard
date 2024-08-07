@@ -119,5 +119,9 @@ def update_line_chart_trend_ct(pv_list, age_type, sex, data, n_clicks):
     if n_clicks:
         fig.update_layout(yaxis_range=[0,100])
         fig_2.update_layout(yaxis_range=[0,100])
+    
+    if filtered_df.shape[0] == 0:
+        fig.update_xaxes(range=[0, 5], dtick=1)
+        fig_2.update_xaxes(range=[0, 5], dtick=1)
 
     return [fig, fig_2]

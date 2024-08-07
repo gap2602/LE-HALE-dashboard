@@ -175,8 +175,8 @@ body {
     visibility: hidden;
     height: 100px;
     width: 500px;
-    background-color: black;
-    color: #fff;
+    background-color: #FFFF8A;
+    color: black;
     text-align: left;
     border-radius: 6px;
     padding: 5px 5px 5px 5px;
@@ -191,8 +191,8 @@ body {
     visibility: hidden;
     height: 120px;
     width: 550px;
-    background-color: black;
-    color: #fff;
+    background-color: #FFFF8A;
+    color: black;
     text-align: left;
     border-radius: 6px;
     padding: 5px 5px 5px 5px;
