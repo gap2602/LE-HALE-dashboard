@@ -34,6 +34,7 @@ pv_w_code_df.loc[pv_w_code_df["age_type"] == "60-64", "age_type"] = 60
 pv_w_code_df["age_type"] = pv_w_code_df["age_type"].astype(int)
 
 app = Dash(__name__, external_stylesheets=['assets/app_style.css'], use_pages=True)
+server = app.server
 
 app.layout = html.Div(children=[
     html.H1(children='อายุคาดเฉลี่ย และอายุคาดเฉลี่ยของการมีสุขภาวะของประชากรไทย พ.ศ. - ระดับประเทศและจังหวัด', className="header", id="main-header"),
