@@ -52,7 +52,7 @@ app.layout = html.Div(children=[
                 ], className="pic-frame", id="province-frame", href="/district-province/district", style={'background-color': 'gray'}),
                 html.H4("LE และ HALE เขตสุขภาพและจังหวัด", className="menu-name"),
                 dcc.Link(children=[
-                    html.Img(src=dash.get_asset_url("Menu - trend.png"), className="menu-pic")
+                    html.Img(src=dash.get_asset_url("Menu - Trend.png"), className="menu-pic")
                 ], className="pic-frame", id="trend-frame", href="/trend/trend-country", style={'background-color': 'gray'}),
                 html.H4("แนวโน้ม LE และ HALE", className="menu-name")
             ], id="menu-panel"),
