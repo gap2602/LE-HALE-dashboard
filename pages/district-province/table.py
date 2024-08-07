@@ -3,7 +3,7 @@ from dash import dcc, html, dash_table, callback
 from dash.dependencies import Input, Output
 import pandas as pd
 
-AREA_CODE_PATH = r"data\area code.csv"
+AREA_CODE_PATH = "data/area code.csv"
 ac_df = pd.read_csv(AREA_CODE_PATH)
 province_dict = ac_df.set_index("eng_province")["th_province"].to_dict()
 province_label = [{'label': th_pv,'value': eng_pv,'search': th_pv} for eng_pv, th_pv in province_dict.items()]

@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 import pandas as pd
 from dash.dependencies import Input, Output
 
-AREA_CODE_PATH = r"data\area code.csv"
+AREA_CODE_PATH = "data/area code.csv"
 ac_df = pd.read_csv(AREA_CODE_PATH)
 ac_df['code'] = ac_df['area_code'].apply(lambda x: int(x.split()[1]))
 province_dict = ac_df.set_index("eng_province")["th_province"].to_dict()

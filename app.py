@@ -4,11 +4,11 @@ from dash.dependencies import Input, Output, State
 import pandas as pd
 
 # path
-OVERVIEW_PATH = r"data\country.csv"
-DISTRICT_PATH = r"data\district.csv"
-AREA_CODE_PATH = r"data\area code.csv"
-PROVINCE_PATH = r"data\province.csv"
-MAP_PATH = r"data\province_lat_lon.csv"
+OVERVIEW_PATH = "data/country.csv"
+DISTRICT_PATH = "data/district.csv"
+AREA_CODE_PATH = "data/area code.csv"
+PROVINCE_PATH = "data/province.csv"
+MAP_PATH = "data/province_lat_lon.csv"
 
 # read data
 ov_df = pd.read_csv(OVERVIEW_PATH)
